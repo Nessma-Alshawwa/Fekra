@@ -1,0 +1,233 @@
+/*loading-screen */
+
+.loading-screen {
+    min-height: 100vh;
+    font-family: Roboto, Arial;
+    color: #ADAFB6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(249, 251, 255, 0.6);
+}
+
+.loader {
+    border-radius: 50%;
+    position: relative;
+    margin: 50px;
+    display: inline-block;
+    height: 0px;
+    width: 0px;
+}
+
+.loader span {
+    position: absolute;
+    display: block;
+    background: #ddd;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    top: -20px;
+    perspective: 100000px;
+}
+
+.loader span:nth-child(1) {
+    left: 60px;
+    animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
+    animation-delay: 0s;
+    background: #ff756f;
+}
+
+.loader span:nth-child(2) {
+    left: 20px;
+    animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
+    animation-delay: .2s;
+    background: #ffde6f;
+}
+
+.loader span:nth-child(3) {
+    left: -20px;
+    animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
+    animation-delay: .4s;
+    background: #01de6f;
+}
+
+.loader span:nth-child(4) {
+    left: -60px;
+    animation: bounce2 1s cubic-bezier(0.04, 0.35, 0, 1) infinite;
+    animation-delay: .6s;
+    background: #6f75ff;
+}
+
+@keyframes bounce2 {
+
+    0%,
+    75%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-30px);
+    }
+}
+
+
+/*End Loading Screen*/
+
+body {
+    overflow-x: hidden;
+}
+
+.bg-fekra {
+    background-color: #AFC9D3;
+}
+
+.hero-slider img {
+    /*    height: 100vh;*/
+    height: calc(100vh - 132px);
+    object-fit: cover;
+}
+
+.top-header {
+    background: #fb4400;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.team {
+    overflow: hidden;
+}
+
+.navbar .navbar-brand {
+    font-family: Freestyle Script;
+    font-size: 2.2em;
+}
+
+.navbar .navbar-brand i {
+    font-size: 0.8em;
+}
+
+.Freestyle {
+    font-family: Freestyle Script;
+    font-size: 48px;
+}
+
+.Freestyle-s {
+    font-family: Freestyle Script;
+    font-size: 5em;
+    display: inline-block;
+    background-color: rgba(225, 225, 225, 0.5);
+    color: #333;
+    border-radius: 50%;
+}
+
+.Freestyle_p {
+    font-size: 1.75em;
+    background-color: rgba(225, 225, 225, 0.5);
+    color: #333;
+    border-radius: 25px;
+}
+
+.fs-22 {
+    font-size: 1.2em;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: rgba(256, 256, 256, 0.7);
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.circle .fas {
+    font-size: 1.25em;
+}
+
+
+/* page rezan */
+
+.boox {
+    margin-top: 55px
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.image {
+    border-radius: 25px;
+}
+
+.act {
+    margin-top: -18px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.i {
+    color: #426BF1;
+}
+
+.location {
+    opacity: 55%;
+    font-size: 13px;
+}
+
+.pank {
+    opacity: 70%;
+    font-size: 16px;
+}
+
+.cont {
+    opacity: 80%;
+    font-size: 15px;
+}
+
+.Address {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.details {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Female {
+    margin-top: 25px;
+}
+
+
+/*sign in*/
+
+.container-sm {
+    width: 40%;
+}
+
+::-webkit-input-placeholder {
+    padding-left: 40px;
+}
+
+#fa-user {
+    position: absolute;
+    margin-top: -25px;
+    padding-left: 10px;
+}
+
+#lock {
+    position: absolute;
+    margin-top: -25px;
+    padding-left: 10px;
+}
+
+.dec {
+    text-decoration: none;
+    color: #000;
+}
+
+.dec:hover {
+    text-decoration: none;
+    color: #333;
+}
